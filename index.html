@@ -136,7 +136,8 @@
         return response.text();
       })
       .then(() => {
-        alert("✅ Melding verzonden naar Google Sheets via n8n!");
+        alert("Melding ontvangen, bedankt voor de melding!");
+        location.reload(); // 🔁 Pagina herladen na verzenden
       })
       .catch(error => {
         console.error("Fout bij verzenden:", error);
